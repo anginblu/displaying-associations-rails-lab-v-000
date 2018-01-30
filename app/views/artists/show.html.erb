@@ -1,6 +1,6 @@
 <h1>Artist</h1>
 
-Name: <%= link_to @artist.name, artist_path(@artist) %><br>
+<%= link_to @artist.name, artist_path(@artist) %><br>
 <ul>
   <% if @artist.song_count > 0 %>
   <h2><%= @artist.songs.count %> <%= pluralize(@artist.songs.count, 'Song') %></h2>
