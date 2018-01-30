@@ -2,7 +2,7 @@
 
 <ul>
   <% @artists.each do |artist| %>
-    <%= link_to @artist.name, artist_path(@artist) %><br>
+    <%= link_to artist.name, artist_path(@artist) %><br>
       <% if @artist.song_count > 0 %>
       <h2><%= @artist.songs.count %> <%= pluralize(@artist.songs.count, 'Song') %></h2>
       <li>
@@ -10,5 +10,5 @@
           <%= link_to i.title, song_path(i) %>
         <% end %>
       </li>
-      <% end %>  
+      <% end %>
 </ul>
