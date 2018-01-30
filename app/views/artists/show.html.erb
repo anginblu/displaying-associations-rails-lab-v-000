@@ -6,6 +6,6 @@ Songs:
   <% if @artist.song_count > 0 %>
     <% @artist.songs.each do |i| %>
       <%= link_to i.name, song_path(i) %>
-
+    <% end %>
 </ul>
 <%= link_to @song.artist_name, artist_path(@song.artist)%>
