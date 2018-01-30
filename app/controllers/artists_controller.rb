@@ -4,6 +4,7 @@ class ArtistsController < ApplicationController
 
   def show
     find_artist
+    
   end
 
   def new
