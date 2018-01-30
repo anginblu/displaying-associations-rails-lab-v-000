@@ -8,7 +8,7 @@ class SongsController < ApplicationController
   end
 
   def new
-    
+
   end
 
   def create
