@@ -3,7 +3,7 @@
 <ol>
   <% @songs.each do |i| %>
     <li>
-      <%= link_to i.artist_name, artist_path(i.artist_name)%> - <%= link_to i.title, song_path(i) %>
+      <%= link_to i.artist_name, artist_path(i.artist_name)%> - <%= link_to i.title, song_path(i) %><br>
     </li>
   <% end %>  
 </ol>
