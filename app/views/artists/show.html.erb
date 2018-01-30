@@ -3,8 +3,9 @@
 Name: <%= link_to @artist.name, artist_path(@artist) %><br>
 Songs:
 <ul>
-  <% @artist.songs%>
-  <%= link_to @song.artist_name, artist_path(@song.artist)%>
+  <% if @artist.song_count > 0 %>
+    <% @artist.songs.each do |i| %>
+      <%= link_to i.name, artist_path(@song.artist)%>
 
 </ul>
 <%= link_to @song.artist_name, artist_path(@song.artist)%>
